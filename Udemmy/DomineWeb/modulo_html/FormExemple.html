@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Defines the document type as HTML5 -->
+
+<html lang="en">
+<!-- Starts the HTML document and sets the language to English -->
+
+<head>
+    <!-- Document head -->
+    <meta charset="UTF-8">
+    <!-- Sets the character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the viewport to follow the device's width and initial zoom level -->
+    <title>Form Example</title>
+    <!-- Page title that appears in the browser tab -->
+</head>
+
+<body>
+    <!-- Body of the document where visible content goes -->
+    <h1>User Registration Form</h1>
+    <!-- Main title of the page -->
+
+    <form action="/submit_form" method="post">
+        <!-- Form element with action and method attributes -->
+
+        <!-- Text input -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+
+        <!-- Email input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <!-- Date input -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br>
+
+        <!-- Radio buttons -->
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br>
+
+        <!-- Select dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+        </select>
+        <br>
+
+        <!-- Textarea -->
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio" rows="4" cols="50"></textarea>
+        <br>
+
+        <!-- Checkbox -->
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+    <!-- End of the form element -->
+
+</body>
+
+</html>
+<!-- End of the HTML document -->
